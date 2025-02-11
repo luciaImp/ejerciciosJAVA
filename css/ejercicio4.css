@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  #palabra-oculta {
+    font-size: 2em;
+    margin: 20px;
+  }
+  
+  #intentos {
+    font-weight: bold;
+  }
+  
+  input {
+    font-size: 1em;
+    padding: 5px;
+    margin: 10px;
+  }
+  
+  button {
+    font-size: 1em;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  #letras-incorrectas {
+    font-weight: bold;
+    color: red;
+  }
+  

@@ -1,0 +1,77 @@
+[class*="entypo-"]:before { font-family: 'entypo', sans-serif; }
+body {
+  background-color: #ecf0f1;
+  font: 300 1.25em/1.4 "Lato", sans-serif;
+  color: #686868;
+}
+h1, h2, h3, h4, h5, h6 { font-weight: 400; }
+h1, .sub-heading {
+  text-align: center;
+  margin: .5rem 0 1rem;
+}
+.sub-heading {
+  font-size: .75em;
+  font-weight: 300;
+}
+
+/**
+ * estilo carro compra
+ */
+.product_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.product {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+}
+.product img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+._column {
+  margin-top: 10px;
+}
+.topPadding {
+  margin-top: 15px;
+}
+.topPaddingTotal {
+  font-weight: bold;
+  color: #2c3e50;
+}
+.summary {
+  margin-top: 20px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.cart-totals-key {
+  font-size: 1em;
+  font-weight: bold;
+  color: #34495e;
+}
+.cart-totals-value {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #e74c3c;
+}
+.bttn {
+  background: #27ae60;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+.bttn:hover {
+  background: #2ecc71;
+}

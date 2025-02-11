@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego del Ahorcado</title>
+  <script src="js/ejercicio4.js" defer></script>
+  <link rel="stylesheet" href="css/ejercicio4.css">
+</head>
+<body>
+  <!-- Enlace de vuelta a la página index que he llamado ejercicio7.html --> 
+  <button onclick="window.location.href='ejercicio7.html'">Volver al Índice</button>
+  
+  <h1>Juego del Ahorcado</h1>
+  <p id="palabra-oculta"></p>
+  <p>Intentos restantes: <span id="intentos">6</span></p>
+  <p>Letras incorrectas: <span id="letras-incorrectas"></span></p>
+  
+  <input type="text" id="letra" maxlength="1" placeholder="Introduce una letra">
+  <button id="probar">Probar</button>
+  <!-- Botón para reiniciar el juego, inicialmente oculto -->
+  <button id="reiniciar" style="display: none;">Jugar de nuevo</button>
+  
+  <p id="mensaje"></p>
+</body>
+</html>

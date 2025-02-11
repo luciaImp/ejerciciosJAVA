@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Dados</title>
+    <script src="js/ejercicio2.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #dados {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px;
+        }
+        img {
+            width: 100px;
+            height: 100px;
+        }
+        button {
+            font-size: 1em;
+            margin: 5px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+     <!-- Enlace de vuelta a la página index que he llamado ejercicio7.html--> 
+     <button onclick="window.location.href='ejercicio7.html'">Volver al Índice</button>
+    <h1>Juego de Dados</h1>
+    <div id="dados">
+        <img id="dado1" src="img/dado1.jpg" alt="Dado 1">
+        <img id="dado2" src="img/dado1.jpg" alt="Dado 2">
+    </div>
+    <h2>Suma: <span id="suma">2</span></h2>
+    <button id="jugar">Jugar</button>
+</body>
+</html>
