@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gestor de Libros</title>
-  <link rel="stylesheet" href="ejercicio5.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Libros</title>
+    <link rel="stylesheet" href="css/ejercicio5.css">
 </head>
 <body>
-   <!-- Enlace de vuelta a la página index que he llamado ejercicio7.html--> 
-   <button onclick="window.location.href='ejercicio7.html'">Volver al Índice</button>
-  <div class="container">
-    <h1>Gestor de Libros</h1>
-    
-    <!-- Formulario para agregar un nuevo libro -->
-    <form id="add-book-form">
-      <input type="text" id="title" placeholder="Título del libro" required>
-      <button type="submit">Agregar Libro</button>
-    </form>
-
-    <!-- Lista donde se mostrarán los libros -->
-    <ul id="book-list"></ul>
-  </div>
-  
-  <script src="ejercicio5.js" defer></script>
+    <div class="container">
+        <header>
+            <button class="back-button" onclick="window.location.href='ejercicio7.html'">← Volver al Índice</button>
+            <h1>Gestor de Libros</h1>
+        </header>
+        <main>
+            <section class="book-form">
+                <h2>Agregar un nuevo libro</h2>
+                <form id="book-form">
+                    <input type="text" id="book-title" placeholder="Título del libro" required>
+                    <button type="submit">Agregar</button>
+                </form>
+            </section>
+            <section class="book-list">
+                <h2>Lista de Libros</h2>
+                <ul id="book-list"></ul>
+            </section>
+        </main>
+    </div>
+    <script src="js/ejercicio5.js"></script>
 </body>
 </html>

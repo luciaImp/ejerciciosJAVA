@@ -1,69 +1,125 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Contenedor principal */
-  .container {
-    max-width: 600px;
-    margin: 50px auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
-  
-  /* Título centrado */
-  h1 {
-    text-align: center;
-  }
-  
-  /* Estilos para el formulario */
-  form {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  
-  form input[type="text"] {
-    padding: 10px;
-    font-size: 16px;
-    flex: 1;
-    margin-right: 10px;
-  }
-  
-  form button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  /* Lista de libros */
-  ul#book-list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  ul#book-list li {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  /* Título de libro */
-  .book-title {
-    flex: 1;
-  }
-  
-  /* Botones de acción para cada libro */
-  .book-actions button {
-    margin-left: 10px;
-    padding: 5px 10px;
-    cursor: pointer;
-  }
-  
+  background: linear-gradient(to right, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Botón de volver */
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px 15px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.back-button:hover {
+  background: #0056b3;
+}
+
+/* Formulario */
+.book-form {
+  margin: 20px 0;
+}
+
+.book-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.book-form button {
+  width: 100%;
+  padding: 10px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book-form button:hover {
+  background: #218838;
+}
+
+/* Lista de libros */
+.book-list {
+  margin-top: 20px;
+}
+
+.book-list ul {
+  list-style: none;
+}
+
+.book-list li {
+  background: #f8f9fa;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.book-list li button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+/* Botón de eliminar */
+.delete-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #bd2130;
+}
+
+/* Botón de marcar como leído */
+.read-btn {
+  background: #ffc107;
+  color: black;
+}
+
+.read-btn:hover {
+  background: #e0a800;
+}
+
+/* Estilo de libro leído */
+.read {
+  text-decoration: line-through;
+  color: gray;
+}
